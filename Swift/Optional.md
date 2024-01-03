@@ -1,3 +1,4 @@
+# Optional
 옵셔널은 값이 있을 수도 없을 수도 있는 타입
 주로 타입 뒤에 ?를 붙여서 Optional을 표시한다.
 ## Optional Unwrapping
