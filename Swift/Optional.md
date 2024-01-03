@@ -11,9 +11,13 @@ num1 + 2 // error
 ```
 그래서 Wrapping된 값을 사용하기 위해서는 Unwrapping 하여 값을 꺼내야 한다.  
 
+<br>
+
 ### 강제 언래핑
 !를 붙여 말 그대로 강제로 언래핑을 하는 것이다.  
 강제로 하는 것이다 보니 값이 nil일때도 언래핑을 하게되어 오류가 발생하고 앱이 멈추게 된다.  
+
+<br>
 
 ### Nil-Coalescing Operator
 기본 값을 설정해주어 값이 nil일 때 사용할 수 있게 해주는 operator 이다.
@@ -21,6 +25,9 @@ num1 + 2 // error
 ![](https://i.imgur.com/GgN0NUh.png)![](https://i.imgur.com/aDPh9fz.png) 
 ?? 를 붙여 nil일 때 대신 넣어줄 기본값을 설정한다.    
 num2는 nil이기 때문에 기본값 2가 들어가서 3으로 출력되는 것을 볼 수 있다.  
+
+<br>
+
 
 ### Optional Binding
 옵셔널에 할당된 값을 임시 변수 또는 상수에 할당을 해주는 방식이다.  
@@ -53,6 +60,7 @@ processValue(nil) // 값이 없습니다.
 - if 문은 옵셔널 값이 존재 하는 경우에만 어떤 동작을 수행시키고 싶을 때 사용한다.
 - guard 문은 필수 값이 있는지 확인을 하고 다음 코드를 수행시킬 때 사용합니다. 그래서 주로 함수 내에서 사용하여 nil일 때 함수를 빠져나오는 식으로 사용된다.  
 
+<br>
 ### Optional Chaining
 chaining의 뜻은 "연쇄"로 말 그대로 옵셔널을 연쇄적으로 사용하는 것이다.
 ```swift
