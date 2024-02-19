@@ -1,3 +1,4 @@
+# ARC (Automatic Reference Counting)
 Swift는 참조 타입을 자동으로 힙 영역에 할당하게 된다.
 ```swift
 class Human { 
