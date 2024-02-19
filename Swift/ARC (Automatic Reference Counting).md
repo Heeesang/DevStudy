@@ -2,12 +2,12 @@
 Swift는 참조 타입을 자동으로 힙 영역에 할당하게 된다.
 ```swift
 class Human { 
-		var name: String?
-		var age: Int?
-		init(name: String?, age: Int?) {
-	        self.name = name
-	        self.age = age
-	    }
+	var name: String?
+	var age: Int?
+	init(name: String?, age: Int?) {
+	      self.name = name
+	      self.age = age
+	}
 }
 let heesang = Human(name: "heesang", age: 20)
 let heesang2 = heesang
@@ -26,7 +26,7 @@ let heesang2 = heesang
 ## 메모리 관리 방법
 ARC 이름 그대로 RC(Reference Counting)을 하는 것이다.  
 
-Reference Count는 이 인스턴스를 현재 얼마나 참조하고 있는지를 숫자로 나타낸것이다.
+Reference Count는 이 인스턴스를 현재 얼마나 참조하고 있는지를 숫자로 나타낸것이다.  
 RC가 5이면 5곳에서 참조를 하고 있다는 뜻
 위 사진을 보면 Human은 RC가 0, Animal은 RC가 2인것을 알 수 있다.
 
